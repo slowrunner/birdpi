@@ -2,23 +2,23 @@
 My implementation of BirdNet-Pi
 
 
-REF:  BirdNetPi.com
-REF:  https://github.com/mcguirepr89/BirdNET-Pi
+REF:  BirdNetPi.com  
+REF:  https://github.com/mcguirepr89/BirdNET-Pi  
 
-== INSTALLATION ==
+== INSTALLATION ==  
 
-1) Wrote PiOS Lite 64-bit
-- Host: BirdPi
+1) Wrote PiOS Lite 64-bit  
+- Host: BirdPi  
 
-2) First Login
+2) First Login  
 - ssh-keygen -R X.X.X.X
-- setup git
+- setup git  
   - created slowrunner/birdpi
   - sudo apt install git
   - git clone https://github.com/slowrunner/birdpi.git
   - setup git credentials
 
-3) Increase swap space
+3) Increase swap space  
 ```
 sudo dphys-swapfile swapoff
 sudo nano /etc/dphys-swapfile
@@ -42,7 +42,7 @@ sudo dphys-swapfile swapon
 - Tools->SystemServices->ClearAllData
 
 
-== MAINTENANCE ==
+== MAINTENANCE ==  
 
 - SHUTDOWN:  Tools->SystemServices->Shutdown
 - CLEARALLDATA:  Tools->SystemServices->ClearAllsData
