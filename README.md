@@ -48,4 +48,17 @@ sudo dphys-swapfile swapon
 - CLEARALLDATA:  Tools->SystemServices->ClearAllsData
 
 
+=== PERFORMANCE ON Pi3B - OUTSIDE AIR 91degF ===
+```
+ 17:33:17 up  5:49,  2 users,  load average: 1.90, 2.25, 2.33
+               total        used        free      shared  buff/cache   available
+Mem:             909         468         156           3         284         380
+Swap:           1023         187         836
+temp=68.2'C
+frequency(48)=1200000000
+throttled=0x50000
+
+(Lousy power cable to Pi)
+```
+
 
