@@ -18,8 +18,16 @@ REF:  https://github.com/mcguirepr89/BirdNET-Pi
   - git clone https://github.com/slowrunner/birdpi.git
   - setup git credentials
 
+3) Increase swap space
+```
+sudo dphys-swapfile swapoff
+sudo nano /etc/dphys-swapfile
+edit CONF_SWAPSIZE=1024
+sudo dphys-swapfile setup
+sudo dphys-swapfile swapon
+```
 
-3) BirdNet-Pi setup
+4) BirdNet-Pi setup
 - cd ~
 - curl -s https://raw.githubusercontent.com/mcguirepr89/BirdNET-Pi/main/newinstaller.sh | bash
 - browse to http://birdpi.local   <-- note: not birdnetpi.local
@@ -29,12 +37,12 @@ REF:  https://github.com/mcguirepr89/BirdNET-Pi
   - Password: 
   - Location: (round to to 4 decimal places)
 
-4) Test
+5) Test
 - Play bird from Merlin
 - Tools->SystemServices->ClearAllData
 
 
-== MAINTENENCE ==
+== MAINTENANCE ==
 
 - SHUTDOWN:  Tools->SystemServices->Shutdown
 - CLEARALLDATA:  Tools->SystemServices->ClearAllsData
