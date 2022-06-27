@@ -19,5 +19,25 @@ REF:  https://github.com/mcguirepr89/BirdNET-Pi
   - setup git credentials
 
 
+3) BirdNet-Pi setup
+- cd ~
+- curl -s https://raw.githubusercontent.com/mcguirepr89/BirdNET-Pi/main/newinstaller.sh | bash
+- browse to http://birdpi.local   <-- note: not birdnetpi.local
+- Username: birdnet
+- Initial pw empty - Set in Tools->Settings->AdvancedSettings
+  - Audio Channels: 1
+  - Password: 
+  - Location: (round to to 4 decimal places)
+
+4) Test
+- Play bird from Merlin
+- Tools->SystemServices->ClearAllData
+
+
+== MAINTENENCE ==
+
+- SHUTDOWN:  Tools->SystemServices->Shutdown
+- CLEARALLDATA:  Tools->SystemServices->ClearAllsData
+
 
 
