@@ -46,6 +46,17 @@ sudo dphys-swapfile swapon
 
 - SHUTDOWN:  Tools->SystemServices->Shutdown
 - CLEARALLDATA:  Tools->SystemServices->ClearAllsData
+- Deleting misidentifications:
+```
+$ sqlite3 ~/BirdNET-Pi/scripts/birds.db
+SQLite version 3.34.1 2021-01-20 14:10:07
+Enter ".help" for usage hints.
+sqlite> delete from detections where com_name = 'Black-whiskered Vireo';
+sqlite> delete from detections where com_name = 'Baltimore Oriole';
+sqlite> delete from detections where com_name = 'Tufted Titmouse';
+sqlite>  (ctrl-d to exit) 
+```
+  Then refresh webpage and visit Daily Charts and back to Today's Detections.
 
 
 === PERFORMANCE ON Pi3B - OUTSIDE AIR 91degF ===
